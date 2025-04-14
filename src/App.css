@@ -4,6 +4,148 @@
   padding: 0;
   /* background-color: greenyellow */
 }
+/* Counter.css - Separate styling file for Counter component */
+
+/* Container styling */
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f3f4f6;
+  padding: 1rem;
+}
+
+.counter-card {
+  width: 100%;
+  max-width: 28rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+}
+
+/* Counter display styling */
+.counter-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+  transition: color 0.3s ease;
+}
+
+/* Button group styling */
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.btn-increment {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.btn-increment:hover:not(:disabled) {
+  background-color: #2563eb;
+}
+
+.btn-increment:disabled {
+  background-color: #93c5fd;
+}
+
+.btn-reset {
+  background-color: #6b7280;
+  color: white;
+}
+
+.btn-reset:hover:not(:disabled) {
+  background-color: #4b5563;
+}
+
+.btn-reset:disabled {
+  background-color: #d1d5db;
+}
+
+.btn-decrement {
+  background-color: #ef4444;
+  color: white;
+}
+
+.btn-decrement:hover:not(:disabled) {
+  background-color: #dc2626;
+}
+
+.btn-decrement:disabled {
+  background-color: #fca5a5;
+}
+
+/* Form styling */
+.form-container {
+  background-color: #f9fafb;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+}
+
+.form-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #374151;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+  color: #374151;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  margin-bottom: 1rem;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+}
+
+.btn-submit {
+  width: 100%;
+  background-color: #10b981;
+  color: white;
+}
+
+.btn-submit:hover {
+  background-color: #059669;
+}
 
 #root {
   max-width: 1280px;
